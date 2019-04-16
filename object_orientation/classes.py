@@ -17,22 +17,23 @@ class Bike:
         elif speed >= 0 <= self.top_speed:
             print('Bike is running')
 
+    # this is funciton for shifiting gears
     def shift_gears(self, speed):
         if speed > 0 < 5:
             self.gears = 1
             print(f'Bike speed is {speed} and gear is shifted up to {self.gears}')
-        if speed > 6 < 10:
-            self.gears = 2
-            print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
-        if speed > 10 < 20:
-            self.gears = 3
-            print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
-        if speed > 20 < 30:
-            self.gears = 4
-            print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
-        if speed > 30 < self.top_speed:
-            self.gears = 5
-            print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
+        # if speed > 6 < 10:
+        #     self.gears = 2
+        #     print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
+        # if speed > 10 < 20:
+        #     self.gears = 3
+        #     print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
+        # if speed > 20 < 30:
+        #     self.gears = 4
+        #     print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
+        # if speed > 30 < self.top_speed:
+        #     self.gears = 5
+        #     print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
         # else:
         #     self.gears = 0
         #     print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
@@ -52,7 +53,7 @@ for i in range(101):
     if speed % 5 == 0:
         print(f'bike is at {speed} Kmph')
         avenger.run(speed)
-        avenger.shift_gears(speed)
+        # avenger.shift_gears(speed)
     if speed == 100:
         for n in range(speed - 1, -1, -1):
             speed = n
@@ -61,3 +62,5 @@ for i in range(101):
             avenger.run(speed)
 
 
+speed = 50
+avenger.shift_gears(speed)
