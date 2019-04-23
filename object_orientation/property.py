@@ -137,7 +137,6 @@ class Model():
         self.last_name = last_name
 
 
-
 m = Model()
 print(m.first_name)
 print(m.last_name)

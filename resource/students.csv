@@ -1,0 +1,28 @@
+grn,student_id,first_name,middle_name,last_name,dob,gender,cast,category,admission_date,mother_first_name,father_middle_name,nationality
+3841,2.01727141103301E+018,Akshara,Santosh,Gadade,2011-09-18,F,Hindu,NT B,2018-06-20,Durga,Santosh,Indian
+3842,2.01727141103301E+018,Kalyani,Sanjay,Jadhao,2012-04-01,F,Hindu,General,2018-06-21,Kanchan,Sanjay,Indian
+3840,2.01727141103301E+018,Pravin,Prakash,Khandekar,2008-01-01,M,Hindu,SC,2018-06-22,Suman,Prakash,Indian
+3831,2.01727141103301E+018,Puja,Dnyaneshvar,Maske,2011-09-01,F,Hindu,NT B,2018-06-23,Mangala,Dnyaneshvar,Indian
+3839,2.01727141103301E+018,Roshan,Santosh,Devkate,2007-12-19,M,Hindu,SC,2018-06-24,Sangita,Santosh,Indian
+3838,2.01727141103301E+018,Jyoti,Sheshera,Devkate,2010-05-08,F,Hindu,SC,2018-06-25,Aasha,Sheshera,Indian
+3837,2.01727141103301E+018,Om,Malhari,Pawar,2012-01-01,M,Hindu,SC,2018-06-26,Sonu,Malhari,Indian
+3823,2.01727141103301E+018,Bala,Dipak,Talikote,2011-02-24,F,Hindu,SC,2018-06-27,Sita,Dipak,Indian
+3821,2.01727141103301E+018,Vedika,Namdev,Mirashe,2011-09-05,F,Hindu,ST,2018-06-28,Vanita,Namdev,Indian
+3819,2.01727141103301E+018,Prajwal,Shyam,Maske,2011-09-23,M,Hindu,NT B,2018-06-29,Sharda,Shyam,Indian
+3816,2.01727141103301E+018,Gayatri,Santosh,Talikote,2011-10-05,F,Hindu,SC,2018-06-30,Ambika,Santosh,Indian
+3814,2.01727141103301E+018,Riddhi,Dattatray,Waghmare,2011-09-16,F,Hindu,SC,2018-06-1,Varsha,Dattatray,Indian
+3812,2.01727141103301E+018,Nilesh,Datta,Khandekar,2010-01-01,M,Hindu,SC,2018-06-2,Aasha,Datta,Indian
+3810,2.01727141103301E+018,Krushna,Ranjit,Jhingare,2011-08-07,M,Hindu,ST,2018-06-3,Punyaratha,Ranjit,Indian
+3809,2.01727141103301E+018,Jay,Pramod,Birangne,2011-03-28,M,Hindu,SC,2018-06-4,Durga,Pramod,Indian
+3808,2.01727141103301E+018,Krushna,Pravin,Maske,2011-08-14,M,Hindu,NT B,2018-06-5,Varsha,Pravin,Indian
+3806,2.01727141103301E+018,Aarushi,Satva,Karhe,2011-08-14,F,Hindu,SC,2018-06-6,Ranjana,Satva,Indian
+3822,2.01727141103301E+018,Yash,Balu,Gulve,2011-09-30,M,Hindu,SC,2018-06-7,Ayodhya,Balu,Indian
+3820,2.01727141103301E+018,Laxman,Avinash,Gulve,2012-03-19,M,Hindu,SC,2018-06-8,Kavita,Avinash,Indian
+3815,2.01727141103301E+018,Shubham,Datta,Devkate,2010-01-01,M,Hindu,SC,2018-06-9,Surekha,Datta,Indian
+3813,2.01727141103301E+018,Govinda,Dipak,Talikote,2011-08-08,M,Hindu,SC,2018-06-10,Meera,Dipak,Indian
+3811,2.01727141103301E+018,Govinda,Manoj,Hotgir,2011-01-01,M,Hindu,SC,2018-06-11,Sangita,Manoj,Indian
+3807,2.01727141103301E+018,Usha,Ananda,Karhe,2010-12-16,F,Hindu,SC,2018-06-12,Sunita,Ananda,Indian
+3805,2.01727141103301E+018,Pratigya,Shravan,Gulave,2011-04-23,F,Hindu,SC,2018-06-13,Bhakti,Shravan,Indian
+3804,2.01727141103301E+018,Vaishanvi,Vitthal,Sakhare,2011-08-26,F,Hindu,NT B,2018-06-14,Aasha,Vitthal,Indian
+3818,2.01127141103301E+018,Sai,Shriram,Mise,2011-07-14,M,Hindu,NT B,2018-06-15,Jyoti,Shriram,Indian
+3817,2.01127141103301E+018,Shankar,Maroti,Ambhore,2011-03-08,M,Hindu,ST,2018-06-16,Sangita,Maroti,Indian
