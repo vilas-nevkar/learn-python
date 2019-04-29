@@ -1,3 +1,6 @@
+from itertools import chain
+from random import choice
+
 
 class Bike:
 
@@ -19,24 +22,22 @@ class Bike:
 
     # this is funciton for shifiting gears
     def shift_gears(self, speed):
-        if speed > 0 < 5:
+
+        if speed > 0 and speed < 5:
             self.gears = 1
             print(f'Bike speed is {speed} and gear is shifted up to {self.gears}')
-        # if speed > 6 < 10:
-        #     self.gears = 2
-        #     print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
-        # if speed > 10 < 20:
-        #     self.gears = 3
-        #     print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
-        # if speed > 20 < 30:
-        #     self.gears = 4
-        #     print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
-        # if speed > 30 < self.top_speed:
-        #     self.gears = 5
-        #     print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
-        # else:
-        #     self.gears = 0
-        #     print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
+        if speed > 6 and speed < 10:
+            self.gears = 2
+            print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
+        if speed > 10 and speed < 20:
+            self.gears = 3
+            print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
+        if speed > 20 and speed < 30:
+            self.gears = 4
+            print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
+        if speed > 30  and speed < self.top_speed:
+            self.gears = 5
+            print(f'Bike speed is {speed} and gear is shift up to {self.gears}')
 
     def take_turn(self, direction, speed):
         print(f'Bike is taking turn to {direction} with speed {speed}')
@@ -46,21 +47,12 @@ avenger = Bike('Avenger Cruise', '220', 'black', 130, 5)
 avenger.display()
 print('Whroooom! Whrooooom!!')
 print('Bike is started...')
+road = list(chain(range(0, 101, 1), range(99, -1, -1)))
+turn = ['Left', 'Right']
 
 
-for i in range(101):
-    speed = i
-    if speed % 5 == 0:
-        print(f'bike is at {speed} Kmph')
-        avenger.run(speed)
-        # avenger.shift_gears(speed)
-    if speed == 100:
-        for n in range(speed - 1, -1, -1):
-            speed = n
-            if speed % -5 == 0:
-                print(f'bike is at {speed} Kmph')
-            avenger.run(speed)
-
-
-speed = 50
-avenger.shift_gears(speed)
+for speed in road:
+    avenger.run(speed)
+    avenger.shift_gears(speed)
+    direction = choice(turn)
+    avenger.take_turn(direction=direction ,speed=speed)
