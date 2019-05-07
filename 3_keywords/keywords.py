@@ -1,9 +1,9 @@
 import keyword
 
 """
-The following list shows the Python keywords. 
+The following list shows the Python 3_keywords. 
 These are reserved words and you cannot use them as constant or variable or any other identifier names. 
-All the Python keywords contain lowercase letters only except True, False, None.
+All the Python 3_keywords contain lowercase letters only except True, False, None.
 
 These 
 """

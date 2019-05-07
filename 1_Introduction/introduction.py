@@ -21,6 +21,7 @@ What can Python do?
 
 
 Why Python?
+
 1. Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
 2. Python has a simple syntax similar to the English language.
 3. Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
@@ -30,6 +31,7 @@ Why Python?
 
 
 Good to know
+
 1. The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2,
     although not being updated with anything other than security updates, is still quite popular.
 2. In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development
@@ -42,4 +44,11 @@ Good to know
 6. Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes.
     Other programming languages often use curly-brackets for this purpose.
 
+
+Before getting started, lets get familiarized with the language first.
+
+Python is a general-purpose language. It has wide range of applications from Web development (like: Django and Bottle),
+scientific and mathematical computing (Orange, SymPy, NumPy) to desktop graphical user Interfaces (Pygame, Panda3D).
+The syntax of the language is clean and length of the code is relatively short. It's fun to work in Python because it
+allows you to think about the problem rather than focusing on the syntax.
 """
