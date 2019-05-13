@@ -5,12 +5,16 @@ import re
 ^ = start of string
 $ = end of string
 + = one or more
-* = 
+* = zero or more
 [] = Used to indicate a set of characters. In a set: single character in list
 [^] = single character NOT in list
 [a-z0-9] = The set of characters can include a range
 \d == [0-9] =  whole numbers only 0-9 
 [a-z] = alphabets in small notation
+() = to focus on group
+(?P<name>) = named group having particular name
+(?P<=) = 
+(?:...) = 
 """
 
 pat = re.compile('^\d+$')
