@@ -55,4 +55,4 @@ for speed in road:
     avenger.run(speed)
     avenger.shift_gears(speed)
     direction = choice(turn)
-    avenger.take_turn(direction=direction ,speed=speed)
+    avenger.take_turn(direction=direction, speed=speed)
