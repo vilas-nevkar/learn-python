@@ -18,10 +18,12 @@ class School:
         return val
 
     @property
-    def add_teacher(self, num):
-        res = self.no_of_teacher + num
-        return res
+    def add_teacher(self):
+        return self.no_of_teacher
 
+    @add_teacher.setter
+    def add_teacher(self, num):
+        self.no_of_teacher += num
 
 
 s = School()
@@ -46,5 +48,10 @@ School.name = 'Other school'
 print(School.name)
 print(s.name)
 print(s.no_of_teacher)
-s.add_teacher(2)
+s.add_teacher = 2
 print(s.no_of_teacher)
+p = School()
+
+print(p.no_of_teacher)
+p.add_teacher = 4
+print(p.no_of_teacher)
