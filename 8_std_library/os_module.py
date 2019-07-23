@@ -3,7 +3,7 @@ import os
 import __root__
 
 # ways to access project root in relative style
-d = os.path.join(__root__.ROOT_DIR, 'files/')
+d = os.path.join(__root__.ROOT_DIR, '6_files/')
 print(d)
 
 PROJECT_ROOT = os.path.split(os.environ['VIRTUAL_ENV'])[0]
