@@ -32,7 +32,7 @@ if __name__ == '__main__':
     print('This module is now executing on its own ')
     print(__name__)
     ########
-    
+
 else:
     print("This module is now imported and executed")
     print(__name__)
