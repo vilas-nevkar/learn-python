@@ -10,3 +10,4 @@
 10. Explain map function
 11. Explain filter function
 12. Explain reduce function
+13. Difference between list append and extend
