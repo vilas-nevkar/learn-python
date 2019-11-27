@@ -402,6 +402,10 @@ Functions:
             6. function aliasing
             7. generators
             8. function decorators
+                without function args
+                with function args
+                with decorator args
+                with @wraps
 
 Uses of underscore in Python.
 
@@ -418,6 +422,10 @@ Uses of underscore in Python.
         __closure__
         __module__
         __file__
+        __builtins__
+        __loader__
+        __spec__
+        __package__
         __class__
         __bases__
 

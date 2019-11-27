@@ -226,44 +226,45 @@ TO understand decorator one must understand following
 """
 
 
-# def test():
-#     print("I am test function")
-
-#
-# def decor(func):
-#     print("Inside decorator")
-#
-#     def inner():
-#         print("Inside inner")
-#         print("I am decorator")
-#     inner()
-#     return func
-#
-#
-# better = decor(test)
-# better()
+def test():
+    print("I am test function")
 
 
-# CASE 2: without passed function args
+def decor(func):
+    print("Inside decorator")
 
-def div_tes(a, b):
-    print("I am division testing")
-    print(a // b)
-
-
-def decor2(func):
-    print('In decorator')
-
-    def inner(a, b):
-        print("decorating")
-        if b == 0:
-            print("Division Not possible")
-        return func
+    def inner():
+        print("Inside inner")
+        print("I am decorator")
+        func()
     return inner
 
 
-out = decor2(div_tes)  # If you pass args here, it wont works
-out(10, 0)  # decorator works here only
+better = decor(test)
+better()
+
+
+# CASE 2: With passed function args
+# def decor2(func):
+#     print('In decorator')
+#
+#     def inner(a, b):
+#         print("decorating")
+#         if b == 0:
+#             print("division Not possible")
+#         else:
+#             func(a, b)
+#     return inner
+#
+#
+# @decor2
+# def div_tes(a, b):
+#     print("I am division testing")
+#     print(a // b)
+#
+#
+# out = decor2(div_tes)  # If you pass args here, it wont works
+# out(10, 0)  # decorator works here only
 
 
 # CASE 3: using wraps
