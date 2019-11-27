@@ -42,7 +42,7 @@
 #     # calling inner function in outer
 #     print("calling inner function")
 #     return inner()
-#
+
 #
 # outer(4)
 # print()
@@ -79,6 +79,7 @@
 # print()
 # out = outer(4)
 # print(out)
+
 
 
 # CASE 4: outer function is returning inner function reference
@@ -151,34 +152,34 @@
 
 # closure demo
 
-# def outer(value):
-#     """
-#     :param value:
-#     :return:
-#     """
-#     print("In outer function")
-#
-#     def inner(temp):
-#         print("In inner function")
-#         print(value + temp)
-#     # calling inner function in outer
-#     print("returning ref of inner function")
-#     return inner
-#
-#
-# inner_ref = outer(4)
-# print()
-# inner_ref2 = inner_ref
-# inner_ref3 = outer(4)
-# inner_ref(6)
-# print()
-# inner_ref2(6)
-# print()
-# del inner_ref
-# del outer
-# inner_ref2(6)
-# print()
-# inner_ref3(6)
+def outer(value):
+    """
+    :param value:
+    :return:
+    """
+    print("In outer function")
+
+    def inner(temp):
+        print("In inner function")
+        print(value + temp)
+    # calling inner function in outer
+    print("returning ref of inner function")
+    return inner
+
+
+inner_ref = outer(4)
+print()
+inner_ref2 = inner_ref
+inner_ref3 = outer(4)
+inner_ref(6)
+print()
+inner_ref2(6)
+print()
+del inner_ref
+del outer
+inner_ref2(6)
+print()
+inner_ref3(6)
 
 
 # function passing demo
@@ -240,8 +241,8 @@ def decor(func):
     return inner
 
 
-better = decor(test)
-better()
+# better = decor(test)
+# better()
 
 
 # CASE 2: With passed function args

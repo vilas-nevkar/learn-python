@@ -9,15 +9,27 @@ Introduction
 
 Basics
     Statements
-    Keywords
+    Keywords (33)
     Character set
+        A-Z
+        a-z
+        0-9
+        Underscore in Python.
+            For storing the value of last expression in interpreter.
+            For ignoring the specific values. (so-called “I don’t care”)
+            To give special meanings and functions to name of vartiables or functions.
+            To use as ‘Internationalization(i18n)’ or ‘Localization(l10n)’ functions.
+            To separate the digits of number literal value.
     Identifiers
+    Literals
+        Int literals
+        String literals
     Variables
     comments
         single line
         multiline
     Interactive shell
-    Indentations
+    Indentation
 
 Data types
     Fundamental types
@@ -380,7 +392,6 @@ Functions:
                 memoryview()	Returns a memory view object
                 staticmethod()	Returns a static method for a function
                 __import__()	Invoked by the import statement
-            Magic fuctions
 
         2. User Defined Functions
             1. defining a function
@@ -395,27 +406,30 @@ Functions:
             5. Nested functions
                 1. defining nested function
                 2. calling nested function
-                3. returning nested functions
-                4. closures
-                5. use of global keyword
-                5. use of nonlocal keyword
+                3. returning nested functions which is not returning value
+                3. returning nested functions which is returning value
+                4. returning nested function reference which is not returning value
+                4. returning nested function reference which is returning value
+                5. function closure
+                6. use of global keyword
+                7. use of nonlocal keyword
             6. function aliasing
+            7. Function as a argument
+                1. calling passed function
+                2. returning passed function
+                3. returning passed function reference
             7. generators
             8. function decorators
-                without function args
-                with function args
-                with decorator args
-                with @wraps
+                1. without function args
+                2. with function args
+                3. with decorator args
+                4. with @wrap
+                5. decorator chaining
+            9. Recursive functions
 
-Uses of underscore in Python.
 
-    For storing the value of last expression in interpreter.
-    For ignoring the specific values. (so-called “I don’t care”)
-    To give special meanings and functions to name of vartiables or functions.
-    To use as ‘Internationalization(i18n)’ or ‘Localization(l10n)’ functions.
-    To separate the digits of number literal value.
-
-    python special variables
+Special variables
+        __init__
         __name__
         __main__
         __doc__
@@ -429,7 +443,35 @@ Uses of underscore in Python.
         __class__
         __bases__
 
-    Python magic methods (Object oriented python)
+Modules
+    1. Builtin modules
+    2. User defined modules
+    3. Imports
+        1. Absolute imports
+        2. Relative imports
+    4. if __name__ == '__main__'
+
+Packages
+    1. Builtin packages
+    2. User defined packages
+    1. Use of __init__
+
+Package Manager
+    1. What is PIP
+    2. easy_install
+    2. Installing packages
+
+Environments
+    1. Whats is envs
+    2. Creating envs
+        1. Using Pipenv
+        2. Using virtualenv
+    3. activating and deactivating envs
+    4. Installing packages in envs
+
+@@@@@@@@@@@ Object Oriented Python  @@@@@@@@@@@@@@
+
+Python magic methods (Object oriented python)
 
     # Numeric magic methods
 
@@ -443,7 +485,6 @@ Uses of underscore in Python.
             __floor__(self)
             __ceil__(self)
             __trunc__(self)
-
 
         2 Normal arithmetic operators
 
@@ -461,7 +502,6 @@ Uses of underscore in Python.
             __and__(self, other)
             __or__(self, other)
             __xor__(self, other)
-
 
         # 3 Reflected arithmetic operators
 
@@ -508,7 +548,6 @@ Uses of underscore in Python.
         __trunc__(self)
         __coerce__(self, other)
 
-
     # Representing your Classes.
 
         __str__(self)
@@ -519,7 +558,6 @@ Uses of underscore in Python.
         __nonzero__(self)
         __dir__(self)
         __sizeof__(self)
-
 
     # Controlling Attribute Access
 
@@ -549,19 +587,16 @@ Uses of underscore in Python.
         __enter__(self)
         __exit__(self, exception_type, exception_value, traceback)
 
-
     # Building Descriptor Objects
 
         __get__(self, instance, owner)
         __set__(self, instance, value)
         __delete__(self, instance)
 
-
     # Copying
 
         __copy__(self)
         __deepcopy__(self, memodict={})
-
 
     # Pickling your own Objects
 
