@@ -152,34 +152,34 @@
 
 # closure demo
 
-def outer(value):
-    """
-    :param value:
-    :return:
-    """
-    print("In outer function")
-
-    def inner(temp):
-        print("In inner function")
-        print(value + temp)
-    # calling inner function in outer
-    print("returning ref of inner function")
-    return inner
-
-
-inner_ref = outer(4)
-print()
-inner_ref2 = inner_ref
-inner_ref3 = outer(4)
-inner_ref(6)
-print()
-inner_ref2(6)
-print()
-del inner_ref
-del outer
-inner_ref2(6)
-print()
-inner_ref3(6)
+# def outer(value):
+#     """
+#     :param value:
+#     :return:
+#     """
+#     print("In outer function")
+#
+#     def inner(temp):
+#         print("In inner function")
+#         print(value + temp)
+#     # calling inner function in outer
+#     print("returning ref of inner function")
+#     return inner
+#
+#
+# inner_ref = outer(4)
+# print()
+# inner_ref2 = inner_ref
+# inner_ref3 = outer(4)
+# inner_ref(6)
+# print()
+# inner_ref2(6)
+# print()
+# del inner_ref
+# del outer
+# inner_ref2(6)
+# print()
+# inner_ref3(6)
 
 
 # function passing demo
@@ -227,18 +227,18 @@ TO understand decorator one must understand following
 """
 
 
-def test():
-    print("I am test function")
-
-
-def decor(func):
-    print("Inside decorator")
-
-    def inner():
-        print("Inside inner")
-        print("I am decorator")
-        func()
-    return inner
+# def test():
+#     print("I am test function")
+#
+#
+# def decor(func):
+#     print("Inside decorator")
+#
+#     def inner():
+#         print("Inside inner")
+#         print("I am decorator")
+#         func()
+#     return inner
 
 
 # better = decor(test)
@@ -246,6 +246,7 @@ def decor(func):
 
 
 # CASE 2: With passed function args
+
 # def decor2(func):
 #     print('In decorator')
 #
@@ -269,4 +270,34 @@ def decor(func):
 
 
 # CASE 3: using wraps
+
 # CASE 4: With decorator args
+
+def decorator(arg1, arg2):
+
+    def real_decorator(function):
+
+        def wrapper(*args, **kwargs):
+            print("Congratulations.  You decorated a function that does something with %s and %s" % (arg1, arg2))
+            function(*args, **kwargs)
+        return wrapper
+
+    return real_decorator
+
+
+# @decorator("Anurag", "Abha")
+# def print_args(*args):
+#     for arg in args:
+#         print(arg)
+#
+#
+# print_args("Anurag", "Abha")
+
+# No more decorator here
+def print_args(*args):
+    for arg in args:
+        print(arg)
+
+
+# getting crazy down here
+decorator("arg1", "arg2")(print_args)(1, 2, 3)
