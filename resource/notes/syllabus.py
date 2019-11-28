@@ -1,5 +1,5 @@
 """
-Introduction
+## Introduction
     History
     Features
     Limitations
@@ -7,9 +7,13 @@ Introduction
     Installation
     Running python program
 
-Basics
+---------------------------------------------------------------------------------------------------------------------
+## Basics
     Statements
+
     Keywords (33)
+        Difference between del and None:
+
     Character set
         A-Z
         a-z
@@ -24,14 +28,53 @@ Basics
     Literals
         Int literals
         String literals
+
     Variables
+    Constants
     comments
         single line
         multiline
+
     Interactive shell
     Indentation
 
-Data types
+---------------------------------------------------------------------------------------------------------------------
+
+## Operators
+    1. Arithmetic Operators
+        + ==>Addition
+        - ==>Subtraction
+        * ==>Multiplication
+        / ==>Division operator
+        % ===>Modulo operator
+        // ==>Floor Division operator
+        ** ==>Exponent operator or power operator
+    2. Relational Operators or Comparison Operators
+        >,>=,<,<=
+    3. Equality operators
+        == , !=
+        Chaining
+    4. Logical operators
+        and, or ,not
+        Boolean types behaviour
+        Non boolean types behaviour
+    5. Bitwise oeprators
+        &,|,^,~,<<,>>
+    6. Assignment operators
+        Augmented Assignments
+    7. Ternary operators
+    6. Special operators
+        1. Identity Operators
+            1. is
+            2. is not
+        2. Membership operators
+            1. in
+            2. not in
+    Operator precedence
+
+---------------------------------------------------------------------------------------------------------------------
+
+## Data types
     Fundamental types
         int
         float
@@ -46,8 +89,11 @@ Data types
             Hexadecimals
 
     2. float
+
     3.complex
+
     4.bool
+
     5.str
         literals
             single line
@@ -123,8 +169,11 @@ Data types
             upper()	Converts a string into upper case
             zfill()	Fills the string with a specified number of 0 values at the beginning
     6.bytes
+
     7.bytearray
+
     8.range
+
     9.list
         defining list
             1. list = []
@@ -161,6 +210,7 @@ Data types
             remove()	Removes the first item with the specified value
             reverse()	Reverses the order of the list
             sort()	Sorts the list
+
     10.tuple
         Defining tuple
             1. t=()
@@ -214,6 +264,7 @@ Data types
             union()	Return a set containing the union of sets
             update()	Update the set with the union of this set and others
     12.frozenset
+
     13.dict
         Defining dicts
             1. d = {}
@@ -237,6 +288,12 @@ Data types
             values()	Returns a list of all the values in the dictionary
     14.None
 
+---------------------------------------------------------------------------------------------------------------------
+
+Mutability & Immutability
+
+---------------------------------------------------------------------------------------------------------------------
+
 Type Casting
     1. int()
     2. float()
@@ -246,39 +303,7 @@ Type Casting
     6. list()
     7. tuple()
 
-Mutability & Immutability
-Constants
-Operators
-    1. Arithmetic Operators
-        + ==>Addition
-        - ==>Subtraction
-        * ==>Multiplication
-        / ==>Division operator
-        % ===>Modulo operator
-        // ==>Floor Division operator
-        ** ==>Exponent operator or power operator
-    2. Relational Operators or Comparison Operators
-        >,>=,<,<=
-    3. Equality operators
-        == , !=
-        Chaining
-    4. Logical operators
-        and, or ,not
-        Boolean types behaviour
-        Non boolean types behaviour
-    5. Bitwise oeprators
-        &,|,^,~,<<,>>
-    6. Assignment operators
-        Augmented Assignments
-    7. Ternary operators
-    6. Special operators
-        1. Identity Operators
-            1. is
-            2. is not
-        2. Membership operators
-            1. in
-            2. not in
-    Operator precedence
+---------------------------------------------------------------------------------------------------------------------
 
 Input and output statements
     1. raw_input()
@@ -291,7 +316,12 @@ Input and output statements
             %s======>String type
             print with {} operator
 
+---------------------------------------------------------------------------------------------------------------------
+
 Command line arguments
+
+---------------------------------------------------------------------------------------------------------------------
+
 Flow controls
     1. Conditionals
         1. if
@@ -304,7 +334,8 @@ Flow controls
         1. continue
         2. break
         3. pass
-Difference between del and None:
+
+---------------------------------------------------------------------------------------------------------------------
 
 Functions:
     Types:
@@ -393,6 +424,8 @@ Functions:
                 staticmethod()	Returns a static method for a function
                 __import__()	Invoked by the import statement
 
+---------------------------------------------------------------------------------------------------------------------
+
         2. User Defined Functions
             1. defining a function
             2. calling a function
@@ -416,7 +449,7 @@ Functions:
             6. function aliasing
             7. Function as a argument
                 1. calling passed function
-                2. returning passed function
+                2. returning passed function call
                 3. returning passed function reference
             7. generators
             8. function decorators
@@ -427,6 +460,7 @@ Functions:
                 5. decorator chaining
             9. Recursive functions
 
+---------------------------------------------------------------------------------------------------------------------
 
 Special variables
         __init__
@@ -443,23 +477,47 @@ Special variables
         __class__
         __bases__
 
+---------------------------------------------------------------------------------------------------------------------
+
 Modules
     1. Builtin modules
     2. User defined modules
     3. Imports
         1. Absolute imports
         2. Relative imports
+    4. Module aliasing while importing
+    5. Member aliasing
+    6. Reloading a module
+    7. Finding members of module using dir()
     4. if __name__ == '__main__'
+
+---------------------------------------------------------------------------------------------------------------------
 
 Packages
     1. Builtin packages
     2. User defined packages
     1. Use of __init__
 
-Package Manager
+---------------------------------------------------------------------------------------------------------------------
+
+File Handling
+
+---------------------------------------------------------------------------------------------------------------------
+
+Exception handling
+
+---------------------------------------------------------------------------------------------------------------------
+
+Database Programming
+
+---------------------------------------------------------------------------------------------------------------------
+
+Package management
     1. What is PIP
     2. easy_install
     2. Installing packages
+
+---------------------------------------------------------------------------------------------------------------------
 
 Environments
     1. Whats is envs
@@ -468,6 +526,8 @@ Environments
         2. Using virtualenv
     3. activating and deactivating envs
     4. Installing packages in envs
+
+---------------------------------------------------------------------------------------------------------------------
 
 @@@@@@@@@@@ Object Oriented Python  @@@@@@@@@@@@@@
 
