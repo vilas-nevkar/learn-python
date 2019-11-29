@@ -337,6 +337,17 @@ Flow controls
 
 ---------------------------------------------------------------------------------------------------------------------
 
+Iterators and Iterable
+
+    An object is called iterable if we can get an iterator from it
+    1. Creating iterator
+    2. Iterating iterator
+    3. Internal working of for loop
+    4. Building your own iterator
+    4. Infinite Iterators
+
+---------------------------------------------------------------------------------------------------------------------
+
 Functions:
     Types:
         1. Built in Functions
@@ -452,6 +463,8 @@ Functions:
                 2. returning passed function call
                 3. returning passed function reference
             7. generators
+                1. Using functions
+                2. Using tuple comprehension
             8. function decorators
                 1. without function args
                 2. with function args
@@ -459,23 +472,24 @@ Functions:
                 4. with @wrap
                 5. decorator chaining
             9. Recursive functions
+            10. Lambda function
 
 ---------------------------------------------------------------------------------------------------------------------
 
 Special variables
-        __init__
-        __name__
-        __main__
-        __doc__
-        __closure__
-        __module__
-        __file__
-        __builtins__
-        __loader__
-        __spec__
-        __package__
-        __class__
-        __bases__
+    __init__
+    __name__
+    __main__
+    __doc__
+    __closure__
+    __module__
+    __file__
+    __builtins__
+    __loader__
+    __spec__
+    __package__
+    __class__
+    __bases__
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -501,6 +515,24 @@ Packages
 ---------------------------------------------------------------------------------------------------------------------
 
 File Handling
+
+    1. Common Operation
+            Get directory contents and file properties
+            Create directories and directory trees
+            Find patterns in filenames
+            Create temporary files and directories
+            Move, rename, copy, and delete files or directories
+            Read and extract data from different types of archives
+            Read multiple files simultaneously using fileinput
+    2. Access modes
+            'r'	This is the default mode. It Opens file for reading.
+            'w'	This Mode Opens file for writing. If file does not exist, it creates a new file.
+                If file exists it truncates the file.
+            'x'	Creates a new file. If file already exists, the operation fails.
+            'a'	Open file in append mode. If file does not exist, it creates a new file.
+            't'	This is the default mode. It opens in text mode.
+            'b'	This opens in binary mode.
+            '+'	This will open a file for reading and writing (updating)
 
 ---------------------------------------------------------------------------------------------------------------------
 
