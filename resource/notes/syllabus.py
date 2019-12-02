@@ -41,35 +41,36 @@
 ---------------------------------------------------------------------------------------------------------------------
 
 ## Operators
-    1. Arithmetic Operators
-        + ==>Addition
-        - ==>Subtraction
-        * ==>Multiplication
-        / ==>Division operator
-        % ===>Modulo operator
-        // ==>Floor Division operator
-        ** ==>Exponent operator or power operator
-    2. Relational Operators or Comparison Operators
-        >,>=,<,<=
-    3. Equality operators
-        == , !=
-        Chaining
-    4. Logical operators
-        and, or ,not
-        Boolean types behaviour
-        Non boolean types behaviour
-    5. Bitwise oeprators
-        &,|,^,~,<<,>>
-    6. Assignment operators
-        Augmented Assignments
-    7. Ternary operators
-    6. Special operators
-        1. Identity Operators
-            1. is
-            2. is not
-        2. Membership operators
-            1. in
-            2. not in
+    Types:
+        1. Arithmetic Operators
+            + ==>Addition
+            - ==>Subtraction
+            * ==>Multiplication
+            / ==>Division operator
+            % ===>Modulo operator
+            // ==>Floor Division operator
+            ** ==>Exponent operator or power operator
+        2. Relational Operators or Comparison Operators
+            >,>=,<,<=
+        3. Equality operators
+            == , !=
+            Chaining
+        4. Logical operators
+            and, or ,not
+            Boolean types behaviour
+            Non boolean types behaviour
+        5. Bitwise oeprators
+            &,|,^,~,<<,>>
+        6. Assignment operators
+            Augmented Assignments
+        7. Ternary operators
+        6. Special operators
+            1. Identity Operators
+                1. is
+                2. is not
+            2. Membership operators
+                1. in
+                2. not in
     Operator precedence
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -515,15 +516,10 @@ Packages
 ---------------------------------------------------------------------------------------------------------------------
 
 File Handling
+    1. Syntax
+        1. open()
+        2. with open()
 
-    1. Common Operation
-            Get directory contents and file properties
-            Create directories and directory trees
-            Find patterns in filenames
-            Create temporary files and directories
-            Move, rename, copy, and delete files or directories
-            Read and extract data from different types of archives
-            Read multiple files simultaneously using fileinput
     2. Access modes
             'r'	This is the default mode. It Opens file for reading.
             'w'	This Mode Opens file for writing. If file does not exist, it creates a new file.
@@ -534,10 +530,106 @@ File Handling
             'b'	This opens in binary mode.
             '+'	This will open a file for reading and writing (updating)
 
+    3. Methods
+            close()	Close an open file. It has no effect if the file is already closed.
+            detach()	Separate the underlying binary buffer from the TextIOBase and return it.
+            fileno()	Return an integer number (file descriptor) of the file.
+            flush()	Flush the write buffer of the file stream.
+            isatty()	Return True if the file stream is interactive.
+            read(n)	Read atmost n characters form the file. Reads till end of file if it is negative or None.
+            readable()	Returns True if the file stream can be read from.
+            readline(n=-1)	Read and return one line from the file. Reads in at most n bytes if specified.
+            readlines(n=-1)	Read and return a list of lines from the file. Reads in at most n bytes/characters if specified.
+            seek(offset,from=SEEK_SET)	Change the file position to offset bytes, in reference to from (start, current, end).
+            seekable()	Returns True if the file stream supports random access.
+            tell()	Returns the current file location.
+            truncate(size=None)	Resize the file stream to size bytes. If size is not specified, resize to current location.
+            writable()	Returns True if the file stream can be written to.
+            write(s)	Write string s to the file and return the number of characters written.
+            writelines(lines)	Write a list of lines to the file.
+
+    3. Common Operation
+            Get directory contents and file properties
+            Create directories and directory trees
+            Find patterns in filenames
+            Create temporary files and directories
+            Move, rename, copy, and delete files or directories
+            Read and extract data from different types of archives
+            Read multiple files simultaneously using fileinput
+
+    4. Working with csv files
+    5. working with JSON data
+
 ---------------------------------------------------------------------------------------------------------------------
 
 Exception handling
+            Exception hierarchy¶
+                The class hierarchy for built-in exceptions is:
 
+                BaseException
+                 +-- SystemExit
+                 +-- KeyboardInterrupt
+                 +-- GeneratorExit
+                 +-- Exception
+                      +-- StopIteration
+                      +-- StopAsyncIteration
+                      +-- ArithmeticError
+                      |    +-- FloatingPointError
+                      |    +-- OverflowError
+                      |    +-- ZeroDivisionError
+                      +-- AssertionError
+                      +-- AttributeError
+                      +-- BufferError
+                      +-- EOFError
+                      +-- ImportError
+                      |    +-- ModuleNotFoundError
+                      +-- LookupError
+                      |    +-- IndexError
+                      |    +-- KeyError
+                      +-- MemoryError
+                      +-- NameError
+                      |    +-- UnboundLocalError
+                      +-- OSError
+                      |    +-- BlockingIOError
+                      |    +-- ChildProcessError
+                      |    +-- ConnectionError
+                      |    |    +-- BrokenPipeError
+                      |    |    +-- ConnectionAbortedError
+                      |    |    +-- ConnectionRefusedError
+                      |    |    +-- ConnectionResetError
+                      |    +-- FileExistsError
+                      |    +-- FileNotFoundError
+                      |    +-- InterruptedError
+                      |    +-- IsADirectoryError
+                      |    +-- NotADirectoryError
+                      |    +-- PermissionError
+                      |    +-- ProcessLookupError
+                      |    +-- TimeoutError
+                      +-- ReferenceError
+                      +-- RuntimeError
+                      |    +-- NotImplementedError
+                      |    +-- RecursionError
+                      +-- SyntaxError
+                      |    +-- IndentationError
+                      |         +-- TabError
+                      +-- SystemError
+                      +-- TypeError
+                      +-- ValueError
+                      |    +-- UnicodeError
+                      |         +-- UnicodeDecodeError
+                      |         +-- UnicodeEncodeError
+                      |         +-- UnicodeTranslateError
+                      +-- Warning
+                           +-- DeprecationWarning
+                           +-- PendingDeprecationWarning
+                           +-- RuntimeWarning
+                           +-- SyntaxWarning
+                           +-- UserWarning
+                           +-- FutureWarning
+                           +-- ImportWarning
+                           +-- UnicodeWarning
+                           +-- BytesWarning
+                           +-- ResourceWarning
 ---------------------------------------------------------------------------------------------------------------------
 
 Database Programming
