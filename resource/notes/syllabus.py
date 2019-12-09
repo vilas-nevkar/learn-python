@@ -467,6 +467,7 @@ Functions:
             7. generators
                 1. Using functions
                 2. Using tuple comprehension
+                3  yield from
             8. function decorators
                 1. without function args
                 2. with function args
@@ -583,7 +584,7 @@ File Handling
 ---------------------------------------------------------------------------------------------------------------------
 
 Exception handling
-            Exception hierarchy¶
+            Exception hierarchy
                 The class hierarchy for built-in exceptions is:
 
                 BaseException
