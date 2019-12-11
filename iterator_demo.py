@@ -1,8 +1,3 @@
-import getopt
-import sys
-import argparse
-import optparse
-
 mytuple = ("apple", "banana", "cherry")
 ml = ["apple", "banana", "cherry"]
 print(iter(mytuple))

@@ -568,18 +568,31 @@ File Handling
             writable()	Returns True if the file stream can be written to.
             write(s)	Write string s to the file and return the number of characters written.
             writelines(lines)	Write a list of lines to the file.
+    4. Modules:
+            os
+            pathlib
+            tempfile
+            shutil
+            zipfile
+            tarfile
+            fileinput
 
-    3. Common Operation
+    5. Common Operation
             Get directory contents and file properties
             Create directories and directory trees
-            Find patterns in filenames
-            Create temporary files and directories
+            Filename pattern matching
+            Traversing dir and processing file
+            Deleting files and dir
             Move, rename, copy, and delete files or directories
+            Create temporary files and directories
             Read and extract data from different types of archives
+                zip
+                tar
             Read multiple files simultaneously using fileinput
+            Reading continuously growing file
 
-    4. Working with csv files
-    5. working with JSON data
+    6. Working with csv files
+    7. working with JSON data
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -651,6 +664,9 @@ Exception handling
                            +-- UnicodeWarning
                            +-- BytesWarning
                            +-- ResourceWarning
+---------------------------------------------------------------------------------------------------------------------
+Context processor
+
 ---------------------------------------------------------------------------------------------------------------------
 
 Database Programming

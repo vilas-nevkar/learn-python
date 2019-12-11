@@ -1,18 +1,28 @@
+
 """
 Modules Learned thus far
     A:
-        1. argparse
+        argparse
+    F:
+        fileinput
     G:
-        1. getopt
+        getopt
     O:
-        1. optparse
+        optparse
+        os
     M:
-        1. math
+        math
+    P:
+        pathlib
     R:
-        1. random
+        random
     S:
-        1. string
-        2. sys
-
-
+        string
+        sys
+        shutil
+    T:
+        tempfile
+        tarfile
+    Z:
+        zipfile
 """

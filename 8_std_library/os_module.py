@@ -8,5 +8,3 @@ print(d)
 
 PROJECT_ROOT = os.path.split(os.environ['VIRTUAL_ENV'])[0]
 print(PROJECT_ROOT)
-
-
