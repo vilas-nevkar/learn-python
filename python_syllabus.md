@@ -1,4 +1,4 @@
-## Python Complete Syllabus
+## Functional Python
 ### Introduction
 * History
 * Features
