@@ -57,13 +57,15 @@
         * `==`
         * `!=`
     3. **Equality operators**
-        * ==
-        * !=
+        * `==`
+        * `!=`
         * Chaining
     4. **Logical operators**
-        and, or ,not
-        Boolean types behaviour
-        Non boolean types behaviour
+        * `and`
+        * `or`
+        * `not`
+        * Boolean types behaviour
+        * Non boolean types behaviour
     5. **Bitwise oeprators**
         * `&`
         * `|`
@@ -72,18 +74,25 @@
         * `<<`
         * `>>`
     6. **Assignment operators**
+        * `=`
         * Augmented Assignments
+            * `+=`
+            * `-=`
+            * `*=`
+            * `/=`
+            * `//=`
+            * `**=`
     7. **Ternary operators**
     6. **Special operators**
         
         1. **Identity Operators**
-            1. is
-            2. is not
+            1. `is`
+            2. `is not`
         2. **Membership operators**
-            1. in
-            2. not in
+            1. `in`
+            2. `not in`
     7. **Walrus operator**
-        * ->
+        * `->`
 * **Operator precedence**
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -113,9 +122,11 @@
         1. single line
         1. multiline
     1. Raw strings
-    1. Accessing
+    1. Operations
+        1. Accessing
         1. Indexing
         1. Slicing
+        
     1. Operators for string
         1. `+` operator for concatenation
         2. `*` operator for repetition
@@ -194,11 +205,11 @@
         2. list=[10,20,30,40]
         3. With dynamic input: (eval)
         4. With list() function:
-    1. Accessing
+    1. Operations
         1. Indexing
         1. Slicing
-    1. Traversing
-        1. using for loop
+        1. Traversing
+            1. using for loop
     1. List vs immutability:
     1. cloning
         Difference between = operator and copy() function
@@ -231,11 +242,11 @@
         2. t=(10,)
         3. t=10,20,30
         4. tuple()
-    1. Accessing
+    1. Operations
         1. Indexing
         1. Slicing
-    1. Traversing
-        using for loop
+        1. Traversing
+            using for loop
     1. Tuple vs immutability:
     1. Operators for tuple
         1. Concatenation operator(+):
@@ -251,7 +262,7 @@
     1. Defining set
         1. using set()
     1. Set vs immutability:
-    1. Operations on set:
+    1. Operations:
         1. Union
         1. Intersection
         1. Difference
@@ -284,10 +295,10 @@
     1. Defining dicts
         1. d = {}
         2. d = dict()
-    1. Accessing
-    1. Operations on dicts
-        Updating dicts
-        deleting elements
+    1. Operations
+        1. Accessing
+        1. Updating dicts
+        1. deleting elements
     1. dict comprehensions
     1. Methods
         * clear()	Removes all the elements from the dictionary
@@ -326,15 +337,20 @@
 1. input()
 1. print()
     1. Formatted string
-        1. %i====>int
-        1. %d====>int
-        1. %f=====>float
-        1. %s======>String type
+        1. %i - int
+        1. %d - int
+        1. %f - float
+        1. %s - String type
         1. print with {} operator
 
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Command line arguments
+1. Modules:
+    1. sys
+    1. argparse
+    1. getopt
+    1. optparse
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -687,6 +703,8 @@ An object is called iterable if we can get an iterator from it
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Database Programming
+
+1. Modules:
 
 ---------------------------------------------------------------------------------------------------------------------
 
