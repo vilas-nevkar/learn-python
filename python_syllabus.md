@@ -1,4 +1,4 @@
-##Python Complete Syllabus
+## Python Complete Syllabus
 ### Introduction
 * History
 * Features
@@ -10,12 +10,12 @@
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Basics
-* Statements
+* **Statements**
 
-* Keywords (33)
+* **Keywords (33)**
     1. Difference between del and None:
 
-* Character set
+* **Character set**
     1. A-Z
     1. a-z
     1. 0-9
@@ -25,78 +25,90 @@
         1. To give special meanings and functions to name of vartiables or functions.
         1. To use as ‘Internationalization(i18n)’ or ‘Localization(l10n)’ functions.
         1. To separate the digits of number literal value.
-* Identifiers
-* Literals
+* **Identifiers**
+* **Literals**
     1. Int literals
     1. String literals
-
-* Variables
-* Constants
-* comments
+* **Variables**
+* **Constants**
+* **comments**
     1. single line
     1. multiline
-
-* Interactive shell
-* Indentation
+* **Interactive shell**
+* **Indentation**
 
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Operators
 * Types:
-    1. Arithmetic Operators
+    1. **Arithmetic Operators**
         1. `+` ==>Addition
         1. `-` ==>Subtraction
         1. `*` ==>Multiplication
-        1. /   ==>Division operator
-        1. %   ===>Modulo operator
-        1. //  ==>Floor Division operator
-        1. **  ==>Exponent operator or power operator
-    2. Relational Operators or Comparison Operators
-        >,>=,<,<=
-    3. Equality operators
-        == , !=
-        Chaining
-    4. Logical operators
+        1. `/`   ==>Division operator
+        1. `%`   ===>Modulo operator
+        1. `//`  ==>Floor Division operator
+        1. `**`  ==>Exponent operator or power operator
+    2. **Relational Operators or Comparison Operators**
+        * `>`
+        * `<`
+        * `>=`
+        * `>=`
+        * `==`
+        * `!=`
+    3. **Equality operators**
+        * ==
+        * !=
+        * Chaining
+    4. **Logical operators**
         and, or ,not
         Boolean types behaviour
         Non boolean types behaviour
-    5. Bitwise oeprators
-        &,|,^,~,<<,>>
-    6. Assignment operators
-        Augmented Assignments
-    7. Ternary operators
-    6. Special operators
-        1. Identity Operators
+    5. **Bitwise oeprators**
+        * `&`
+        * `|`
+        * `^`
+        * `~`
+        * `<<`
+        * `>>`
+    6. **Assignment operators**
+        * Augmented Assignments
+    7. **Ternary operators**
+    6. **Special operators**
+        
+        1. **Identity Operators**
             1. is
             2. is not
-        2. Membership operators
+        2. **Membership operators**
             1. in
             2. not in
-* Operator precedence
+    7. **Walrus operator**
+        * ->
+* **Operator precedence**
 
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Data types
-* Fundamental types
+* **Fundamental types**
     1. int
     1. float
     1. complex
     1. bool
     1. str
 
-1. int
+1. **int**
     1. Literals
         1. Binary
         1. Octals
         1. Hexadecimals
 
-2. float
+2. **float**
 
-3. complex
+3. **complex**
 
-4. bool
+4. **bool**
 
-5. str
+5. **str**
     1. literals
         1. single line
         1. multiline
@@ -170,13 +182,13 @@
         * translate()	Returns a translated string
         * upper()	Converts a string into upper case
         * zfill()	Fills the string with a specified number of 0 values at the beginning
-6. bytes
+6. **bytes**
 
-7. bytearray
+7. **bytearray**
 
-8. range
+8. **range**
 
-9. list
+9. **list**
     1. defining list
         1. list = []
         2. list=[10,20,30,40]
@@ -213,7 +225,7 @@
         * reverse()	Reverses the order of the list
         * sort()	Sorts the list
 
-10. tuple
+10. **tuple**
     1. Defining tuple
         1. t=()
         2. t=(10,)
@@ -235,7 +247,7 @@
         * count()	Returns the number of times a specified value occurs in a tuple
         * index()	Searches the tuple for a specified value and returns the position of where it was found
 
-11. set
+11. **set**
     1. Defining set
         1. using set()
     1. Set vs immutability:
@@ -265,9 +277,10 @@
         * symmetric_difference_update()	inserts the symmetric differences from this set and another
         * union()	Return a set containing the union of sets
         * update()	Update the set with the union of this set and others
-12. frozenset
 
-13. dict
+12. **frozenset**
+
+13. **dict**
     1. Defining dicts
         1. d = {}
         2. d = dict()
@@ -289,7 +302,7 @@
                         insert the key, with the specified value
         * update()	Updates the dictionary with the specified key-value pairs
         * values()	Returns a list of all the values in the dictionary
-14. None
+14. **None**
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -326,14 +339,14 @@
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Flow controls
-1. Conditionals
+1. **Conditionals**
     1. if
     2. if-elif
     3. if-elif-else
-2. Iterative
+2. **Iterative**
     1. for-else
     2. while-else
-3. Transfer
+3. **Transfer**
     1. continue
     2. break
     3. pass
@@ -352,9 +365,9 @@ An object is called iterable if we can get an iterator from it
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Functions:
-Types:
-1. Built in Functions
-    1.  Math
+**Types:**
+1. **Built in Functions**
+    1.  **Math**
         1. abs()	Returns absolute value of a number
         1. divmod()	Returns quotient and remainder of integer division
         1. max()	Returns the largest of the given arguments or items in an iterable
@@ -363,7 +376,7 @@ Types:
         1. round()	Rounds a floating-point value
         1. sum()	Sums the items of an iterable
 
-    1. Type Conversion
+    1. **Type Conversion**
         1. ascii()	Returns a string containing a printable representation of an object
         1. bin()	Converts an integer to a binary string
         1. bool()	Converts an argument to a Boolean value
@@ -378,7 +391,7 @@ Types:
         1. str()	Returns a string version of an object
         1. type()	Returns the type of an object or creates a new type object
 
-    1. Iterables and Iterators
+    1. **Iterables and Iterators**
         1. all()	Returns True if all elements of an iterable are true
         1. any()	Returns True if any elements of an iterable are true
         1. enumerate()	Returns a list of tuples containing indices and values from an iterable
@@ -393,7 +406,7 @@ Types:
         1. sorted()	Returns a sorted list from an iterable
         1. zip()	Creates an iterator that aggregates elements from iterables
 
-    1. Composite Data Type
+    1. **Composite Data Type**
         1. bytearray()	Creates and returns an object of the bytearray class
         1. bytes()	Creates and returns a bytes object (similar to bytearray, but immutable)
         1. dict()	Creates a dict object
@@ -403,7 +416,7 @@ Types:
         1. set()	Creates a set object
         1. tuple()	Creates a tuple object
 
-    1. Classes, Attributes, and Inheritance
+    1. **Classes, Attributes, and Inheritance**
         1. classmethod()	Returns a class method for a function
         1. delattr()	Deletes an attribute from an object
         1. getattr()	Returns the value of a named attribute of an object
@@ -414,7 +427,7 @@ Types:
         1. setattr()	Sets the value of a named attribute of an object
         1. super()	Returns a proxy object that delegates method calls to a parent or sibling class
 
-    1. Input/Output
+    1. **Input/Output**
         1. format()	Converts a value to a formatted representation
         1. input()	Reads input from the console
         1. open()	Opens a file and returns a file object
@@ -427,7 +440,7 @@ Types:
         1. locals()	Updates and returns a dictionary representing current local symbol table
         1. vars()	Returns __dict__ attribute for a module, class, or object
 
-    1. Miscellaneous
+    1. **Miscellaneous**
         1. callable()	Returns True if object appears callable
         1. compile()	Compiles source into a code or AST object
         1. eval()	Evaluates a Python expression
@@ -436,10 +449,10 @@ Types:
         1. help()	Invokes the built-in help system
         1. memoryview()	Returns a memory view object
         1. staticmethod()	Returns a static method for a function
-        1. __import__()	Invoked by the import statement
+        1. `__import__()`	Invoked by the import statement
 
 
-1. User Defined Functions
+1. **User Defined Functions**
     1. defining a function
     2. calling a function
     3. returning from function
@@ -480,19 +493,19 @@ Types:
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Special variables
-1. __init__
-1. __name__
-1. __main__
-1. __doc__
-1. __closure__
-1. __module__
-1. __file__
-1. __builtins__
-1. __loader__
-1. __spec__
-1. __package__
-1. __class__
-1. __bases__
+1. `__init__`
+1. `__name__`
+1. `__main__`
+1. `__doc__`
+1. `__closure__`
+1. `__module__`
+1. `__file__`
+1. `__builtins__`
+1. `__loader__`
+1. `__spec__`
+1. `__package__`
+1. `__class__`
+1. `__bases__`
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -506,23 +519,23 @@ Types:
 5. Member aliasing
 6. Reloading a module
 7. Finding members of module using dir()
-4. if __name__ == '__main__'
+4. `if __name__ == '__main__'`
 
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Packages
 1. Builtin packages
 2. User defined packages
-3. Use of __init__
+3. Use of `__init__`
 
 ---------------------------------------------------------------------------------------------------------------------
 
 ### File Handling
-1. Syntax
+1. **Syntax**
     1. open()
     2. with open()
 
-2. Access modes
+2. **Access modes**
 
      1. ``r''   Open text file for reading.  The stream is positioned at the
              beginning of the file.
@@ -551,7 +564,7 @@ Types:
     1. 't'	This is the default mode. It opens in text mode.
     1. 'b'	This opens in binary mode.
 
-3. Methods
+3. **Methods**
     1. close()	Close an open file. It has no effect if the file is already closed.
     1. detach()	Separate the underlying binary buffer from the TextIOBase and return it.
     1. fileno()	Return an integer number (file descriptor) of the file.
@@ -569,7 +582,7 @@ Types:
     1. write(s)	Write string s to the file and return the number of characters written.
     1. writelines(lines)	Write a list of lines to the file.
 
-4. Modules:
+4. **Modules:**
     1. os
     1. pathlib
     1. tempfile
@@ -578,7 +591,7 @@ Types:
     1. tarfile
     1. fileinput
 
-5. Common Operation
+5. **Common Operation**
     1. Get directory contents and file properties
     1. Create directories and directory trees
     1. Filename pattern matching
@@ -598,7 +611,7 @@ Types:
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Exception handling
-1. Exception hierarchy
+1. **Exception hierarchy**
    
    The class hierarchy for built-in exceptions is:
 
