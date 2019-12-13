@@ -476,8 +476,8 @@ An object is called iterable if we can get an iterator from it
         1. positional args
         2. default args
         3. keyword args
-        4. **args
-        5. **kwargs
+        4. `**args`
+        5. `**kwargs`
     5. Nested functions
         1. defining nested function
         2. calling nested function
@@ -486,8 +486,8 @@ An object is called iterable if we can get an iterator from it
         4. returning nested function reference which is not returning value
         4. returning nested function reference which is returning value
         5. function closure
-        6. use of global keyword
-        7. use of nonlocal keyword
+        6. use of `global` keyword
+        7. use of `nonlocal` keyword
     6. function aliasing
     7. Function as a argument
         1. calling passed function
@@ -496,7 +496,8 @@ An object is called iterable if we can get an iterator from it
     7. generators
         1. Using functions
         2. Using tuple comprehension
-        3  yield from
+        3. yield from
+        4. `send()`
     8. function decorators
         1. without function args
         2. with function args
