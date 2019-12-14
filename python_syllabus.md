@@ -703,6 +703,52 @@ An object is called iterable if we can get an iterator from it
 
 ---------------------------------------------------------------------------------------------------------------------
 
+### Regular expression
+
+1. Special characters:
+
+    1. `\`	escape special characters
+    1. `.`	matches any character
+    1. `^`	matches beginning of string
+    1. `$`	matches end of string
+    1. `[5b-d]`	matches any chars '5', 'b', 'c' or 'd'
+    1. `[^a-c6]`	matches any char except 'a', 'b', 'c' or '6'
+    1. `R|S`	matches either regex R or regex S
+    1. `()`	creates a capture group and indicates precedence
+    
+1. Quantifiers    
+    1. `*`  0 or more (append ? for non-greedy)
+    1. `+`	1 or more (append ? for non-greedy)
+    1. `?`	0 or 1 (append ? for non-greedy)
+    1. `{m}`	exactly mm occurrences
+    1. `{m, n}`	from m to n. m defaults to 0, n to infinity
+    1. `{m, n}?`	from m to n, as few as possible
+    
+1. Special sequences    
+    1. `\A`	start of string
+    1. `\b`	matches empty string at word boundary (between \w and \W)
+    1. `\B`	matches empty string not at word boundary
+    1. `\d`	digit
+    1. `\D`	non-digit
+    1. `\s`	whitespace: `[ \t\n\r\f\v]`
+    1. `\S`	non-whitespace
+    1. `\w`	alphanumeric: `[0-9a-zA-Z_]`
+    1. `\W`	non-alphanumeric
+    1. `\Z`	end of string
+    1. `\g<id>`	matches a previously defined group
+    1. `(?iLmsux)`	matches empty string, sets re.X flags
+    1. `(?:...)`	non-capturing version of regular parentheses
+    1. `(?P...)`	matches whatever matched previously named group
+    1. `(?P=)`	digit
+    1. `(?#...)`	a comment; ignored
+    1. `(?=...)`	lookahead assertion: matches without consuming
+    1. `(?!...)`	negative lookahead assertion
+    1. `(?<=...)`	lookbehind assertion: matches if preceded
+    1. `(?<!...)`	negative lookbehind assertion
+    1. `(?(id)yes|no)`	match 'yes' if group 'id' matched, else 'no'
+
+---------------------------------------------------------------------------------------------------------------------
+
 ### Database Programming
 
 1. Modules:

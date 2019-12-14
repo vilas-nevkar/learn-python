@@ -3,10 +3,14 @@
 Modules Learned thus far
     A:
         argparse
+    C:
+        csv
     F:
         fileinput
     G:
         getopt
+    J:
+        json
     O:
         optparse
         os
