@@ -1,6 +1,6 @@
 
 """
-Modules Learned thus far
+Built in modules
     A:
         argparse
     C:
@@ -29,4 +29,33 @@ Modules Learned thus far
         tarfile
     Z:
         zipfile
+"""
+
+
+"""
+Third-party modules
+    A:
+    
+    C:
+    
+    F:
+    
+    G:
+    
+    J:
+    
+    O:
+    
+    M:
+    
+    P:
+    
+    R:
+    
+    S:
+    
+    T:
+    
+    Z:
+    
 """
