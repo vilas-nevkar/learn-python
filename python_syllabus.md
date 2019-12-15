@@ -626,81 +626,79 @@ An object is called iterable if we can get an iterator from it
 7. working with JSON data
 
 ---------------------------------------------------------------------------------------------------------------------
-
-### Exception handling
-1. **Exception hierarchy**
-   
-   The class hierarchy for built-in exceptions is:
-
-1. BaseException
-    * SystemExit
-    * KeyboardInterrupt
-    * GeneratorExit
-    * Exception
-        * StopIteration
-        * StopAsyncIteration
-        * ArithmeticError
-            * FloatingPointError
-            * OverflowError
-            * ZeroDivisionError
-        * AssertionError
-      * AttributeError
-      * BufferError
-      * EOFError
-      * ImportError
-          * ModuleNotFoundError
-      * LookupError
-          * IndexError
-          * KeyError
-      * MemoryError
-      * NameError
-        * UnboundLocalError
-      * OSError
-          * BlockingIOError
-          * ChildProcessError
-          * ConnectionError
-              * BrokenPipeError
-              * ConnectionAbortedError
-              * ConnectionRefusedError
-              * ConnectionResetError
-          * FileExistsError
-          * FileNotFoundError
-          * InterruptedError
-          * IsADirectoryError
-          * NotADirectoryError
-          * PermissionError
-          * ProcessLookupError
-          * TimeoutError
-      * ReferenceError
-      * RuntimeError
-          * NotImplementedError
-          * RecursionError
-      * SyntaxError
-        * IndentationError
-            * TabError
-      * SystemError
-      * TypeError
-      * ValueError
-        * UnicodeError
-          * UnicodeDecodeError
-          * UnicodeEncodeError
-          * UnicodeTranslateError
-      * Warning
-           * DeprecationWarning
-           * PendingDeprecationWarning
-           * RuntimeWarning
-           * SyntaxWarning
-           * UserWarning
-           * FutureWarning
-           * ImportWarning
-           * UnicodeWarning
-           * BytesWarning
-           * ResourceWarning
----------------------------------------------------------------------------------------------------------------------
 ### Context Managers
 * with function
 * with classes
 
+---------------------------------------------------------------------------------------------------------------------
+
+### Exception handling
+1. **Exception hierarchy**
+   
+    1. BaseException
+        * SystemExit
+        * KeyboardInterrupt
+        * GeneratorExit
+        * Exception
+            * StopIteration
+            * StopAsyncIteration
+            * ArithmeticError
+                * FloatingPointError
+                * OverflowError
+                * ZeroDivisionError
+            * AssertionError
+          * AttributeError
+          * BufferError
+          * EOFError
+          * ImportError
+              * ModuleNotFoundError
+          * LookupError
+              * IndexError
+              * KeyError
+          * MemoryError
+          * NameError
+            * UnboundLocalError
+          * OSError
+              * BlockingIOError
+              * ChildProcessError
+              * ConnectionError
+                  * BrokenPipeError
+                  * ConnectionAbortedError
+                  * ConnectionRefusedError
+                  * ConnectionResetError
+              * FileExistsError
+              * FileNotFoundError
+              * InterruptedError
+              * IsADirectoryError
+              * NotADirectoryError
+              * PermissionError
+              * ProcessLookupError
+              * TimeoutError
+          * ReferenceError
+          * RuntimeError
+              * NotImplementedError
+              * RecursionError
+          * SyntaxError
+            * IndentationError
+                * TabError
+          * SystemError
+          * TypeError
+          * ValueError
+            * UnicodeError
+              * UnicodeDecodeError
+              * UnicodeEncodeError
+              * UnicodeTranslateError
+          * Warning
+               * DeprecationWarning
+               * PendingDeprecationWarning
+               * RuntimeWarning
+               * SyntaxWarning
+               * UserWarning
+               * FutureWarning
+               * ImportWarning
+               * UnicodeWarning
+               * BytesWarning
+               * ResourceWarning
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Regular expression
