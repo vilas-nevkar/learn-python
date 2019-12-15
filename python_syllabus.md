@@ -321,6 +321,11 @@
 
 ---------------------------------------------------------------------------------------------------------------------
 
+
+### Shallow and Deep Copy
+
+---------------------------------------------------------------------------------------------------------------------
+
 ### Type Casting
 1. int()
 1. float()
@@ -472,6 +477,8 @@ An object is called iterable if we can get an iterator from it
     1. defining a function
     2. calling a function
     3. returning from function
+    1. namespace
+    1. global Vs local variables
     4. function arguments
         1. positional args
         2. default args
@@ -523,27 +530,6 @@ An object is called iterable if we can get an iterator from it
 1. `__package__`
 1. `__class__`
 1. `__bases__`
-
----------------------------------------------------------------------------------------------------------------------
-
-### Modules
-1. Builtin modules
-2. User defined modules
-3. Imports
-    1. Absolute imports
-    2. Relative imports
-4. Module aliasing while importing
-5. Member aliasing
-6. Reloading a module
-7. Finding members of module using dir()
-4. `if __name__ == '__main__'`
-
----------------------------------------------------------------------------------------------------------------------
-
-### Packages
-1. Builtin packages
-2. User defined packages
-3. Use of `__init__`
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -633,6 +619,13 @@ An object is called iterable if we can get an iterator from it
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Exception handling
+1. **Syntax**
+    1. try
+    1. except
+    1. finally
+    1. else
+    1. raise
+
 1. **Exception hierarchy**
    
     1. BaseException
@@ -747,9 +740,24 @@ An object is called iterable if we can get an iterator from it
 
 ---------------------------------------------------------------------------------------------------------------------
 
-### Database Programming
+## Modular Python
+1. Builtin modules
+2. User defined modules
+3. Imports
+    1. Absolute imports
+    2. Relative imports
+4. Module aliasing while importing
+5. Member aliasing
+6. Reloading a module
+7. Finding members of module using dir()
+4. `if __name__ == '__main__'`
 
-1. Modules:
+---------------------------------------------------------------------------------------------------------------------
+
+### Packages
+1. Builtin packages
+2. User defined packages
+3. Use of `__init__`
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -767,6 +775,11 @@ An object is called iterable if we can get an iterator from it
     * Using virtualenv
 * activating and deactivating envs
 * Installing packages in envs
+
+---------------------------------------------------------------------------------------------------------------------
+### Database Programming
+
+1. Modules:
 
 ---------------------------------------------------------------------------------------------------------------------
 
