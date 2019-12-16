@@ -12,8 +12,9 @@
 ### Basics
 * **Statements**
 
-* **Keywords (33)**
-    1. Difference between del and None:
+* **Keywords (35)**
+    1. Difference between `del` and `None`:
+    1. `async` and `await` - python 3.7
 
 * **Character set**
     1. A-Z
