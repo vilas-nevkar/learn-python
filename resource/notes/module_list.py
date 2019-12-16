@@ -1,4 +1,3 @@
-
 """
 Built in modules
     A:
@@ -11,6 +10,8 @@ Built in modules
         getopt
     J:
         json
+    K:
+        keyword
     O:
         optparse
         os
@@ -20,10 +21,12 @@ Built in modules
         pathlib
     R:
         random
+        re
     S:
         string
         sys
         shutil
+        sqlite3
     T:
         tempfile
         tarfile

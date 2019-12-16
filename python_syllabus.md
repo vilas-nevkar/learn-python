@@ -535,7 +535,7 @@ An object is called iterable if we can get an iterator from it
 ---------------------------------------------------------------------------------------------------------------------
 
 ### File Handling
-1. **Syntax**
+1. **syntax**
     1. open()
     2. with open()
 
@@ -620,7 +620,7 @@ An object is called iterable if we can get an iterator from it
 ---------------------------------------------------------------------------------------------------------------------
 
 ### Exception handling
-1. **Syntax**
+1. **keywords**
     1. try
     1. except
     1. finally
@@ -697,7 +697,7 @@ An object is called iterable if we can get an iterator from it
 
 ### Regular expression
 
-1. Special characters:
+1. Metacharacters:
 
     1. `\`	escape special characters
     1. `.`	matches any character
@@ -738,7 +738,23 @@ An object is called iterable if we can get an iterator from it
     1. `(?<=...)`	lookbehind assertion: matches if preceded
     1. `(?<!...)`	negative lookbehind assertion
     1. `(?(id)yes|no)`	match 'yes' if group 'id' matched, else 'no'
+    
+1. Method:
+    1. `match()` Returns match object on successful search
+    1. `findall()`	Returns a list containing all matches
+    1. `search()`	Returns a Match object if there is a match anywhere in the string
+    1. `split()`	Returns a list where the string has been split at each match
+    1. `sub()`	Replaces one or many matches with a string
+    1. `subn()` The re.subn() is similar to re.sub() except it returns a tuple of 2 items containing the new string and the number of substitutions made.
 
+1. Flags:
+
+    1. [re.M]	Make begin/end consider each line
+    1. [re.I]	It ignores case
+    1. [re.S]	Make [ . ]
+    1. [re.U]	Make { \w,\W,\b,\B} follows Unicode rules
+    1. [re.L]	Make {\w,\W,\b,\B} follow locale
+    1. [re.X]	Allow comment in Regex
 ---------------------------------------------------------------------------------------------------------------------
 
 ## Modular Python
