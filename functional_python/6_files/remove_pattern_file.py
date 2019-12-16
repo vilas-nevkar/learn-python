@@ -29,7 +29,8 @@ def remove_pattern(pattern, folder):
                             new_data += line
                 # with open(item, 'r+') as f:
                 #     f.write(new_data)
-
+        elif os.path.isdir(item):
+            return remove_pattern(pattern, item)
     print(new_data)
 
 

@@ -1,12 +1,16 @@
 
 """
-Modules Learned thus far
+Built in modules
     A:
         argparse
+    C:
+        csv
     F:
         fileinput
     G:
         getopt
+    J:
+        json
     O:
         optparse
         os
@@ -25,4 +29,33 @@ Modules Learned thus far
         tarfile
     Z:
         zipfile
+"""
+
+
+"""
+Third-party modules
+    A:
+    
+    C:
+    
+    F:
+    
+    G:
+    
+    J:
+    
+    O:
+    
+    M:
+    
+    P:
+    
+    R:
+    
+    S:
+    
+    T:
+    
+    Z:
+    
 """

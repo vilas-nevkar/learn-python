@@ -322,6 +322,11 @@
 
 ---------------------------------------------------------------------------------------------------------------------
 
+
+### Shallow and Deep Copy
+
+---------------------------------------------------------------------------------------------------------------------
+
 ### Type Casting
 1. int()
 1. float()
@@ -473,6 +478,8 @@ An object is called iterable if we can get an iterator from it
     1. defining a function
     2. calling a function
     3. returning from function
+    1. namespace
+    1. global Vs local variables
     4. function arguments
         1. positional args
         2. default args
@@ -524,27 +531,6 @@ An object is called iterable if we can get an iterator from it
 1. `__package__`
 1. `__class__`
 1. `__bases__`
-
----------------------------------------------------------------------------------------------------------------------
-
-### Modules
-1. Builtin modules
-2. User defined modules
-3. Imports
-    1. Absolute imports
-    2. Relative imports
-4. Module aliasing while importing
-5. Member aliasing
-6. Reloading a module
-7. Finding members of module using dir()
-4. `if __name__ == '__main__'`
-
----------------------------------------------------------------------------------------------------------------------
-
-### Packages
-1. Builtin packages
-2. User defined packages
-3. Use of `__init__`
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -627,86 +613,152 @@ An object is called iterable if we can get an iterator from it
 7. working with JSON data
 
 ---------------------------------------------------------------------------------------------------------------------
-
-### Exception handling
-1. **Exception hierarchy**
-   
-   The class hierarchy for built-in exceptions is:
-
-1. BaseException
-    * SystemExit
-    * KeyboardInterrupt
-    * GeneratorExit
-    * Exception
-        * StopIteration
-        * StopAsyncIteration
-        * ArithmeticError
-            * FloatingPointError
-            * OverflowError
-            * ZeroDivisionError
-        * AssertionError
-      * AttributeError
-      * BufferError
-      * EOFError
-      * ImportError
-          * ModuleNotFoundError
-      * LookupError
-          * IndexError
-          * KeyError
-      * MemoryError
-      * NameError
-        * UnboundLocalError
-      * OSError
-          * BlockingIOError
-          * ChildProcessError
-          * ConnectionError
-              * BrokenPipeError
-              * ConnectionAbortedError
-              * ConnectionRefusedError
-              * ConnectionResetError
-          * FileExistsError
-          * FileNotFoundError
-          * InterruptedError
-          * IsADirectoryError
-          * NotADirectoryError
-          * PermissionError
-          * ProcessLookupError
-          * TimeoutError
-      * ReferenceError
-      * RuntimeError
-          * NotImplementedError
-          * RecursionError
-      * SyntaxError
-        * IndentationError
-            * TabError
-      * SystemError
-      * TypeError
-      * ValueError
-        * UnicodeError
-          * UnicodeDecodeError
-          * UnicodeEncodeError
-          * UnicodeTranslateError
-      * Warning
-           * DeprecationWarning
-           * PendingDeprecationWarning
-           * RuntimeWarning
-           * SyntaxWarning
-           * UserWarning
-           * FutureWarning
-           * ImportWarning
-           * UnicodeWarning
-           * BytesWarning
-           * ResourceWarning
----------------------------------------------------------------------------------------------------------------------
 ### Context Managers
 * with function
 * with classes
 
 ---------------------------------------------------------------------------------------------------------------------
 
-### Database Programming
+### Exception handling
+1. **Syntax**
+    1. try
+    1. except
+    1. finally
+    1. else
+    1. raise
 
-1. Modules:
+1. **Exception hierarchy**
+   
+    1. BaseException
+        * SystemExit
+        * KeyboardInterrupt
+        * GeneratorExit
+        * Exception
+            * StopIteration
+            * StopAsyncIteration
+            * ArithmeticError
+                * FloatingPointError
+                * OverflowError
+                * ZeroDivisionError
+            * AssertionError
+          * AttributeError
+          * BufferError
+          * EOFError
+          * ImportError
+              * ModuleNotFoundError
+          * LookupError
+              * IndexError
+              * KeyError
+          * MemoryError
+          * NameError
+            * UnboundLocalError
+          * OSError
+              * BlockingIOError
+              * ChildProcessError
+              * ConnectionError
+                  * BrokenPipeError
+                  * ConnectionAbortedError
+                  * ConnectionRefusedError
+                  * ConnectionResetError
+              * FileExistsError
+              * FileNotFoundError
+              * InterruptedError
+              * IsADirectoryError
+              * NotADirectoryError
+              * PermissionError
+              * ProcessLookupError
+              * TimeoutError
+          * ReferenceError
+          * RuntimeError
+              * NotImplementedError
+              * RecursionError
+          * SyntaxError
+            * IndentationError
+                * TabError
+          * SystemError
+          * TypeError
+          * ValueError
+            * UnicodeError
+              * UnicodeDecodeError
+              * UnicodeEncodeError
+              * UnicodeTranslateError
+          * Warning
+               * DeprecationWarning
+               * PendingDeprecationWarning
+               * RuntimeWarning
+               * SyntaxWarning
+               * UserWarning
+               * FutureWarning
+               * ImportWarning
+               * UnicodeWarning
+               * BytesWarning
+               * ResourceWarning
+---------------------------------------------------------------------------------------------------------------------
+
+### Regular expression
+
+1. Special characters:
+
+    1. `\`	escape special characters
+    1. `.`	matches any character
+    1. `^`	matches beginning of string
+    1. `$`	matches end of string
+    1. `[5b-d]`	matches any chars '5', 'b', 'c' or 'd'
+    1. `[^a-c6]`	matches any char except 'a', 'b', 'c' or '6'
+    1. `R|S`	matches either regex R or regex S
+    1. `()`	creates a capture group and indicates precedence
+    
+1. Quantifiers    
+    1. `*`  0 or more (append ? for non-greedy)
+    1. `+`	1 or more (append ? for non-greedy)
+    1. `?`	0 or 1 (append ? for non-greedy)
+    1. `{m}`	exactly mm occurrences
+    1. `{m, n}`	from m to n. m defaults to 0, n to infinity
+    1. `{m, n}?`	from m to n, as few as possible
+    
+1. Special sequences    
+    1. `\A`	start of string
+    1. `\b`	matches empty string at word boundary (between \w and \W)
+    1. `\B`	matches empty string not at word boundary
+    1. `\d`	digit
+    1. `\D`	non-digit
+    1. `\s`	whitespace: `[ \t\n\r\f\v]`
+    1. `\S`	non-whitespace
+    1. `\w`	alphanumeric: `[0-9a-zA-Z_]`
+    1. `\W`	non-alphanumeric
+    1. `\Z`	end of string
+    1. `\g<id>`	matches a previously defined group
+    1. `(?iLmsux)`	matches empty string, sets re.X flags
+    1. `(?:...)`	non-capturing version of regular parentheses
+    1. `(?P...)`	matches whatever matched previously named group
+    1. `(?P=)`	digit
+    1. `(?#...)`	a comment; ignored
+    1. `(?=...)`	lookahead assertion: matches without consuming
+    1. `(?!...)`	negative lookahead assertion
+    1. `(?<=...)`	lookbehind assertion: matches if preceded
+    1. `(?<!...)`	negative lookbehind assertion
+    1. `(?(id)yes|no)`	match 'yes' if group 'id' matched, else 'no'
+
+---------------------------------------------------------------------------------------------------------------------
+
+## Modular Python
+1. Builtin modules
+2. User defined modules
+3. Imports
+    1. Absolute imports
+    2. Relative imports
+4. Module aliasing while importing
+5. Member aliasing
+6. Reloading a module
+7. Finding members of module using dir()
+4. `if __name__ == '__main__'`
+
+---------------------------------------------------------------------------------------------------------------------
+
+### Packages
+1. Builtin packages
+2. User defined packages
+3. Use of `__init__`
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -724,6 +776,11 @@ An object is called iterable if we can get an iterator from it
     * Using virtualenv
 * activating and deactivating envs
 * Installing packages in envs
+
+---------------------------------------------------------------------------------------------------------------------
+### Database Programming
+
+1. Modules:
 
 ---------------------------------------------------------------------------------------------------------------------
 
