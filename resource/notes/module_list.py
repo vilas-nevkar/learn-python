@@ -54,6 +54,7 @@ Third-party modules
     P:
     
     R:
+        requests
     
     S:
     
